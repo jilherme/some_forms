@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cadastro de produto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<nav>
+		<ul>
+			<a href="cad_cliente.html">Cadastro de cliente</a>
+			<a href="cad_produto.html">Cadastro de produto</a>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div class="container">
+		<h1>Cadastro de produto</h1>
+		<form action="grava.php" name="cad_produto">
+			<div class="form-group"><label>cod produto:</label><input type="text" name="codprod" size="25"></div>
+			<div class="form-group"><label>nome produto:</label><input type="text" name="idprod" size="25"></div>
+			<label>tipo do produto:</label>
+			<select>
+				<option>Unitário</option>
+				<option>Kg</option>
+				<option>Litro</option>
+			</select>
+			<label>Categoria:</label>
+			<select>
+				<option>Informática</option>
+				<option>Alimentício</option>
+				<option>Esportivo</option>
+				<option>Limpeza</option>
+				<option>Vestuário</option>
+				<option>Eletrodoméstico</option>
+				<option>Automotivo</option>
+			</select>
+			<label>Valor Custo:<input type="text" name="valcusto" size="25"></label>
+			<label>Valor Venda:<input type="text" name="valvenda" size="25"></label>
+			<label>Data Fabricação:<input type="text" name="Fabricação" size="25"></label>
+			<label>Data Validade:<input type="text" name="Validade" size="25"></label>
+	</div>
+	<input type="button" name="butao" value="Cadastrar-se">
+	</form>
+</body>
+
+</html>

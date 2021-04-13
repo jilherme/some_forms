@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cadastro de cliente</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<nav>
+		<ul>
+			<a href="cad_cliente.html">Cadastro de cliente</a>
+			<a href="cad_produto.html">Cadastro de produto</a>
+		</ul>
+	</nav>
+</header>
+
+<body>
+	<div class="container">
+		<h1>Cadastro de cliente</h1>
+		<form name="cliente" action="grava.php" method="POST">
+			<div class="form-group">
+				<label>Código:</label><input type="text" name="codigo" size="50" maxlength="50" disabled>
+			</div>
+			<div class="form-group">
+				Nome:<input type="text" name="nome" size="50">
+			</div>
+			<div class="form-group">
+				<label>Telefone:</label><input type="text" name="Telefone" size="30" maxlength="11"
+					placeholder="(XX)-999-999-999">
+			</div>
+			<div class="form-group">
+				<label>E-mail:</label><input type="text" name="e-mail" size="50">
+			</div>
+			<div class="form-group">
+				<label>Endereço:</label><input type="text" name="Endereço" size="50">
+			</div>
+			<div class="form-group">
+				<label>Cep:</label><input type="text" name="Cep" size="30" maxlength="8">
+			</div>
+			<div class="form-group">
+				<label>Bairro:</label><input type="text" name="Bairro" size="30">
+			</div>
+			<div class="form-group">
+				<label>Cidade:</label><input type="text" name="Cidade" size="30">
+			</div>
+			<label>UF:</label>
+			<select>
+				<option> Acre</option>
+				<option> Alagoas </option>
+				<option> Amapá </option>
+				<option> Amazonas </option>
+				<option> Bahia </option>
+				<option> Ceará </option>
+				<option> Distrito Federal </option>
+				<option> Espírito Santo </option>
+				<option> Goiás </option>
+				<option> Maranhão </option>
+				<option> Mato Grosso</option>
+				<option> Mato Grosso do Sul</option>
+				<option> Minas Gerais</option>
+				<option> Pará</option>
+				<option> Paraíba </option>
+				<option> Paraná </option>
+				<option> Pernambuco</option>
+				<option> Piauí </option>
+				<option> Rio de Janeiro</option>
+				<option> Rio Grande do Norte</option>
+				<option> Rio Grande do Sul </option>
+				<option> Rondônia </option>
+				<option> Roraima </option>
+				<option> Santa Catarina</option>
+				<option selected="selected"> São Paulo</option>
+				<option> Sergipe </option>
+				<option> Tocantins</option>
+			</select>
+	</div>
+	<input type="button" name="butao" value="Cadastrar-se" class="btn btn-primary">
+	</form>
+</body>
+
+</html>
